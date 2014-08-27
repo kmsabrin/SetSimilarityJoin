@@ -5,20 +5,24 @@
 /** Hadoop Version 0.20.2 ***********************************/
 /************************************************************/
 
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.file.FileSystem;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.StringTokenizer;
 
-import org.apache.hadoop.conf.*;
-import org.apache.hadoop.fs.*;
-import org.apache.hadoop.io.*;
-import org.apache.hadoop.mapreduce.*;
-import org.apache.hadoop.util.*;
-import org.apache.hadoop.mapreduce.lib.input.*;
-import org.apache.hadoop.mapreduce.lib.output.*;
-import org.apache.hadoop.filecache.DistributedCache;
-import java.net.URI;
-import org.apache.hadoop.mapred.JobConf;
-import org.apache.hadoop.mapred.lib.*;
+import javax.security.auth.login.Configuration;
+import javax.tools.Tool;
+
+import com.sun.xml.internal.bind.CycleRecoverable.Context;
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
 
 
 public class SSJoin extends Configured implements Tool
